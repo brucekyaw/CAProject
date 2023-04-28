@@ -1,0 +1,62 @@
+﻿@{
+
+}
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Cart">Digital Corner</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                  
+                <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Continue Shopping</a>
+                </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">CheckOut</a>
+                </li>
+        </ul>
+            <div class="text-dark float-end">
+                <label name="totalPrice" id="totalPrice" >Total Price: 223$</label>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="card-group">
+    <div class="container">
+
+        @for(int i=0; i<5; i++)
+        {
+            
+        <div class="row-md-1 mt-3 mt-4 ">
+                    <div class="col d-flex justify-content-center mt-4 ">
+                        <div class="card w-25 ms-4 ">
+                             <img src="~/img/adobe-photoshop-elements-2023.jpg" class="card-img img-ratio" alt="...">
+                                 <div class="card-body">
+                                     <h5 class="card-title">Nigga</h5>
+                                     <p class="card-text ellipse-text">fkmiemswfmofn</p>
+                                  </div>
+                                <div class="card-footer">
+                                     <small class="fs-4 text-black me-2">123$</small>
+                                     <small class="fs-6 text-black float-end">4.5☆</small>         
+                                </div>
+                         </div>
+                         <div class="card d-flex justify-content-center w-25" >
+                             <label name="quantity" id="quantity" class="d-flex justify-content-center mb-2">Total: 60$</label>
+                            <input type="number" class="btn btn-primary"/>
+                            <label name="quantity" id="quantity" class="d-flex justify-content-center mt-2 mb-2">1</label>
+
+ 
+                         </div>
+                         
+                    </div>
+        </div>
+        }
+
+     </div>
+</div>

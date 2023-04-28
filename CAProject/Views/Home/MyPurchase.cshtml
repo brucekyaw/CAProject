@@ -1,0 +1,58 @@
+﻿@{
+
+}
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="History">My History</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                  
+                      <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Logout">Logout</a>
+                        </li>
+                </ul>
+                </div>
+             </div>
+</nav>
+
+<div class="card-group">
+    <div class="container">
+
+        @for(int i=0; i<5; i++)
+        {
+            
+        <div class="row-md-1 mt-3 mt-4 ">
+                    <div class="col d-flex justify-content-center mt-4 ">
+                        <div class="card w-25 ms-4 ">
+                             <img src="~/img/adobe-photoshop-elements-2023.jpg" class="card-img img-ratio" alt="...">
+                                 <div class="card-body">
+                                     <h5 class="card-title">Nigga</h5>
+                                     <p class="card-text ellipse-text">fkmiemswfmofn</p>
+                                  </div>
+                                <div class="card-footer">
+                                <button type="button" class="btn btn-info w-100">Downlaod</button>
+                                </div>
+                         </div>
+                         <div class="card d-flex justify-content-center w-25" >
+                            <label name="purchaseDate" id="purchaseDate" class="d-flex justify-content-start mb-2">Purchase On: 8 Apr 2023</label>
+                            <label name="purchaseQuantity" id="purchaseQuantity" class="d-flex justify-content-start mt-2 mb-2">Quantity:       1</label>
+                            <select name="activationCode" id="activationCode">
+                                <option>141aGS-345213-321MVAS-124151w</option>
+                                <option>141aGS-345213-321MVAS-124151w</option>
+                            </select>
+                         </div>
+                         
+                    </div>
+        </div>
+        }
+
+     </div>
+</div>
