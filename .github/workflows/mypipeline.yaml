@@ -7,4 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: setup dotnet sdk
-      run: echo hello world
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.0.x'
+
+    - name: checkout your source
+      uses: actions/checkout@v3
+
+    - name: list repository
+      run: git status 
