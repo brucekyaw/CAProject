@@ -16,9 +16,4 @@ jobs:
 
     - name: list repository
       run: dir 
-      
-    - name: build app
-      run:  dotnet build
 
-    - name: list repository
-      run: dir /A
